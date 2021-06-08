@@ -1,5 +1,5 @@
 name: learn-github-actions
-on: push
+on: [push]
 jobs:
   deploy:
     name: Deploy Development Environment
