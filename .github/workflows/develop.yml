@@ -1,7 +1,8 @@
 name: learn-github-actions
-push:
-  branches:
-    - develop
+on
+  push:
+    branches:
+      - develop
 jobs:
   deploy:
     name: Deploy Development Environment
