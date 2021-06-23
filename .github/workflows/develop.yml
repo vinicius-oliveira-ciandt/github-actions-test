@@ -16,6 +16,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            ls -la
             cd wp-content/plugins/github-actions-test
             git pull
+            composer install
