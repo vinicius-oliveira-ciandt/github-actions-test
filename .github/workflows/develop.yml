@@ -17,4 +17,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ls -la
-            whoami
+            cd wp-content/plugins/github-actions-test
+            git pull
