@@ -1,0 +1,12 @@
+name: Development Environment
+on:
+  repository_dispatch:
+    types: [develop]
+
+jobs:
+  deploy:
+    name: Deploy Development Environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo "Deu certo!"
